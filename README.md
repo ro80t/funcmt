@@ -10,7 +10,7 @@ The catch with `fn.toString()` is that the worker has no idea where the function
 npm install funcmt
 ```
 
-`typescript` (`^5`) is a peer dependency — funcmt uses its compiler API to parse function source.
+`typescript` (`^5`) is a peer dependency — funcmt uses its compiler API to parse function source. Requires Node.js `>=22`.
 
 ## Usage
 

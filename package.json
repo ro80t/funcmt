@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ro80t/funcmt.git"
