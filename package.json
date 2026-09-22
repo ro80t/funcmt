@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ro80t/funcmt.git"
+  },
   "files": [
     "dist"
   ],
