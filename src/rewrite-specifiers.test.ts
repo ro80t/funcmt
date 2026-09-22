@@ -40,7 +40,7 @@ describe("rewriteSpecifiersToAbsolute", () => {
   it("round-trips a filename with quotes, backticks, ${} and unicode through require()", async () => {
     const dir = await mkdtemp(join(tmpdir(), "funcmt-"));
     try {
-      const weirdName = 'weird `name` with \'quote\' and ${curly} and 日本語.cjs';
+      const weirdName = "weird `name` with 'quote' and ${curly} and 日本語.cjs";
       const fixturePath = join(dir, weirdName);
       await writeFile(fixturePath, "module.exports = 42;\n");
 
@@ -56,7 +56,7 @@ describe("rewriteSpecifiersToAbsolute", () => {
   it("round-trips the same kind of filename through dynamic import() as a valid file:// URL", async () => {
     const dir = await mkdtemp(join(tmpdir(), "funcmt-"));
     try {
-      const weirdName = 'weird `name` with \'quote\' and ${curly} and 日本語.mjs';
+      const weirdName = "weird `name` with 'quote' and ${curly} and 日本語.mjs";
       const fixturePath = join(dir, weirdName);
       await writeFile(fixturePath, "export default 42;\n");
 
